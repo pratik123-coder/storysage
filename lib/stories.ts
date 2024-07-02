@@ -5,10 +5,6 @@ import { cleanTitle } from "./cleanTitle";
 
 const storyDir = path.join(process.cwd(), "public/stories");
 
-interface PartialPage {
-  txt?: string;
-  png?: string;
-}
 
 // Access public files and retrieve stories
 export function getAllStories(): Story[] {
@@ -22,7 +18,7 @@ export function getAllStories(): Story[] {
         const files = fs.readdirSync(storyPath);
 
         const pages: Page[] = [];
-        const pageMap: { [key: string]: PartialPage } = {};
+        const pageMap: { [key: string]: Partial<Page> } = {};
 
         files.forEach((file) => {
             const filePath = path.join(storyPath, file);
