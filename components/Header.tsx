@@ -14,13 +14,16 @@ function Header() {
             -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 
             md:-right-3 -rotate-1" />
             <p className="relative text-white">With AI</p>
+            
             </div>
+            
         </div>
+        <p className="pt-3">By Pratik Mohanty</p>
       </Link>
       {/* Nav Icons */}
       <div className="absolute top-5 right-5 flex space-x-2 ">
         <Link href="/">
-          <FilePen className=" w-8 h-8 lg:w-10 le:h-18 mx-auto 
+          <FilePen className=" w-10 h-10 lg:w-10 le:h-18 mx-auto 
           text-purple-500 ht-18 border border-purple-500 p-2 
           rounded-md hover:opacity-50 cursor-pointer" />
         </Link>

@@ -112,7 +112,7 @@ function StoryWriter() {
             <SelectValue placeholder="Provide the number of pages the story should be"></SelectValue>
           </SelectTrigger>
           <SelectContent className="w-full">
-            {Array.from({ length: 10 }, (_, i) => (
+            {Array.from({ length: 3 }, (_, i) => (
               <SelectItem key={i} value={String(i+1)}>{i + 1}</SelectItem>
             ))}
           </SelectContent>
